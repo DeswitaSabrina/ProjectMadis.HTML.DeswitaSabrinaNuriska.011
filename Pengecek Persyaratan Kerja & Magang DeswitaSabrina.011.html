@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://127.0.0.1:5500/CineMatch/PengecekPersyaratanAdmKerja/index.html -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengecek Persyaratan Kerja &amp; Magang</title>
+  <link rel="stylesheet" href="./Pengecek Persyaratan Kerja &amp; Magang DeswitaSabrina.011_files/style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>📋 Pengecek Persyaratan Administrasi</h1>
+      <p>Pastikan berkas lamaran kerja atau magangmu sudah lengkap sebelum dikirim.</p>
+    </header>
+
+    <section class="card">
+      <div class="tabs" role="tablist">
+        <button class="tab" data-mode="kerja" role="tab">💼 Kerja</button>
+        <button class="tab active" data-mode="magang" role="tab">🎓 Magang</button>
+      </div>
+
+      <label class="field">
+        <span>Nama pelamar (opsional)</span>
+        <input type="text" id="nama" placeholder="Contoh: Deswita Sabrina ">
+      </label>
+
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <span id="progress-text">7 dari 7 wajib terpenuhi</span>
+          <strong id="progress-percent">100%</strong>
+        </div>
+        <div class="progress-bar"><div id="progress-fill" class="done" style="width: 100%;"></div></div>
+      </div>
+
+      <ul id="checklist" class="checklist">
+    <li class="checked" data-id="cv">
+      <label>
+        <input type="checkbox" checked="">
+        <span>
+          <span class="item-title">CV / Daftar Riwayat Hidup
+            <span class="req">*</span>
+          </span><br>
+          <span class="item-desc">Terbaru, format PDF</span>
+        </span>
+      </label>
+    </li>
+  
+    <li class="checked" data-id="surat-lamaran">
+      <label>
+        <input type="checkbox" checked="">
+        <span>
+          <span class="item-title">Surat Lamaran Magang
+            <span class="req">*</span>
+          </span><br>
+          <span class="item-desc">Sebutkan posisi dan durasi magang</span>
+        </span>
+      </label>
+    </li>
+  
+    <li class="checked" data-id="surat-pengantar">
+      <label>
+        <input type="checkbox" checked="">
+        <span>
+          <span class="item-title">Surat Pengantar dari Kampus
+            <span class="req">*</span>
+          </span><br>
+          <span class="item-desc">Ditandatangani pihak kampus / prodi</span>
+        </span>
+      </label>
+    </li>
+  
+    <li class="checked" data-id="ktm">
+      <label>
+        <input type="checkbox" checked="">
+        <span>
+          <span class="item-title">Kartu Tanda Mahasiswa (KTM)
+            <span class="req">*</span>
+          </span><br>
+          <span class="item-desc">Scan depan belakang</span>
+        </span>
+      </label>
+    </li>
+  
+    <li class="checked" data-id="ktp">
+      <label>
+        <input type="checkbox" checked="">
+        <span>
+          <span class="item-title">Fotokopi / Scan KTP
+            <span class="req">*</span>
+          </span><br>
+          <span class="item-desc">Masih berlaku</span>
+        </span>
+      </label>
+    </li>
+  
+    <li class="checked" data-id="transkrip">
+      <label>
+        <input type="checkbox" checked="">
+        <span>
+          <span class="item-title">Transkrip Nilai Sementara
+            <span class="req">*</span>
+          </span><br>
+          <span class="item-desc">Dengan IPK terbaru</span>
+        </span>
+      </label>
+    </li>
+  
+    <li class="checked" data-id="foto">
+      <label>
+        <input type="checkbox" checked="">
+        <span>
+          <span class="item-title">Pas Foto Formal
+            <span class="req">*</span>
+          </span><br>
+          <span class="item-desc">Latar polos</span>
+        </span>
+      </label>
+    </li>
+  
+    <li class="" data-id="khs">
+      <label>
+        <input type="checkbox">
+        <span>
+          <span class="item-title">KHS Semester Terakhir
+            <span class="tag">opsional</span>
+          </span><br>
+          <span class="item-desc">Pendukung transkrip</span>
+        </span>
+      </label>
+    </li>
+  
+    <li class="" data-id="portofolio">
+      <label>
+        <input type="checkbox">
+        <span>
+          <span class="item-title">Portofolio / Hasil Karya
+            <span class="tag">opsional</span>
+          </span><br>
+          <span class="item-desc">Link atau file proyek</span>
+        </span>
+      </label>
+    </li>
+  
+    <li class="" data-id="sertifikat">
+      <label>
+        <input type="checkbox">
+        <span>
+          <span class="item-title">Sertifikat Pendukung
+            <span class="tag">opsional</span>
+          </span><br>
+          <span class="item-desc">Organisasi, lomba, atau pelatihan</span>
+        </span>
+      </label>
+    </li>
+  
+    <li class="" data-id="rekomendasi">
+      <label>
+        <input type="checkbox">
+        <span>
+          <span class="item-title">Surat Rekomendasi Dosen
+            <span class="tag">opsional</span>
+          </span><br>
+          <span class="item-desc">Menambah nilai lamaran</span>
+        </span>
+      </label>
+    </li>
+  
+    <li class="" data-id="proposal">
+      <label>
+        <input type="checkbox">
+        <span>
+          <span class="item-title">Proposal / Rencana Magang
+            <span class="tag">opsional</span>
+          </span><br>
+          <span class="item-desc">Jika diminta perusahaan</span>
+        </span>
+      </label>
+    </li>
+  </ul>
+
+      <div id="result" class="result"></div>
+
+      <div class="actions">
+        <button id="btn-check" class="btn primary">Cek Kelengkapan</button>
+        <button id="btn-reset" class="btn ghost">Reset</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>Tanda <span class="req">*</span> berarti wajib. Data tersimpan di browser kamu.</small>
+    </footer>
+  </main>
+
+  <script src="./Pengecek Persyaratan Kerja &amp; Magang DeswitaSabrina.011_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
